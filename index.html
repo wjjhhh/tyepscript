@@ -349,46 +349,6 @@
     <a href="javascript:;" class="btn_tips_bang"><img src='img/phone.png'/>立即绑定</a>
   </div>
 </body>
-<script src="js/jquery-3.0.0.min.js"></script>
-<script type="text/javascript">
-  $(".t_close").on("click",function(){
-    $(this).siblings("input").val("");
-  });
+<script src="untitled/js/ts1.js"></script>
 
-
- //关于绑定提示
-  $(".tan_tips .t_close").on("click",function(){
-     tan_tips.hide();
-  });
-  $(".btn_tips_bang").on("click",function(){
-    tan_tips.hide();
-  });
-  var tan_tips={
-    tan:$(".tan_tips"),
-    timer:null,
-    second:10,
-    daoshu:function(){
-      _this=this;
-      this.timer&&clearTimeout(this.timer);
-      this.timer=setTimeout(function(){
-        console.log( _this.second);
-        _this.second--;
-        if(_this.second>=0){
-          _this.daoshu();
-        }
-        else{
-          _this.hide();
-        }
-      },1000);
-    },
-    show:function(){
-      this.tan.show();
-    },
-    hide:function(){
-      clearTimeout(this.timer);
-      this.tan.hide();
-    }
-  }
-  tan_tips.daoshu();
-</script>
 </html>
