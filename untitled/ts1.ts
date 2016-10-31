@@ -1,24 +1,11 @@
-class Animai{
-    name:string;
-    eat():void{
-        alert(this.name+'吃');
-    }
-    breath():void{
-        alert(this.name+'呼吸')
-    }
-    constructor(name:string){
-        this.name=name;
-    }
+interface SquareConfig{
+    color?:string;
+    width?:number;
 }
-class Fish extends Animai{
-    name:string;
-    constructor(name:string){
-        super(name);
+function createSquare(config:SquareConfig):{color:string;area:number}{
+    var newSquare={color:"white",area:100};
+    if(config.color){
+        newSquare.color=config.color;
     }
-    breath():void{
-        alert(this.name+'呼吸重写');
-    }
+
 }
-var fish=new Fish('哇哈哈');
-
-
