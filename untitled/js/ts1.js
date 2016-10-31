@@ -10,4 +10,13 @@ function createSquare(config) {
 }
 var mySquare = createSquare({ color: 'red', width: 200 });
 var mySearch;
+mySearch = function (source, subString) {
+    var result = source.search(subString);
+    if (result == -1) {
+        return false;
+    }
+    else {
+        return true;
+    }
+};
 //# sourceMappingURL=ts1.js.map
