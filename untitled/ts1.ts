@@ -11,3 +11,5 @@ class Greeter{
     }
 }
 var greeter=new Greeter('world');
+var a=greeter.greet();
+console.log(a);
