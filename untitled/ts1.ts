@@ -1,15 +1,24 @@
-/**
- * Created by Employee on 2016/10/28.
- */
-class Greeter{
-    greeting:string;
-    constructor(message:string){
-        this.greeting=message;
+class Animai{
+    name:string;
+    eat():void{
+        alert(this.name+'吃');
     }
-    greet(){
-        return "hello "+this.greeting;
+    breath():void{
+        alert(this.name+'呼吸')
+    }
+    constructor(name:string){
+        this.name=name;
     }
 }
-var greeter=new Greeter('world');
-var a=greeter.greet();
-console.log(a);
+class Fish extends Animai{
+    name:string;
+    constructor(name:string){
+        super(name);
+    }
+    breath():void{
+        alert(this.name+'呼吸重写');
+    }
+}
+var fish=new Fish('哇哈哈');
+
+
