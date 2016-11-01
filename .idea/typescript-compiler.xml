@@ -2,7 +2,10 @@
 <project version="4">
   <component name="TypeScriptCompiler">
     <option name="isCompilerEnabled" value="true" />
+    <option name="typeScriptServiceDirectory" value="D:\nodejs\node_global\node_modules\typescript\lib" />
+    <option name="typeScriptCompilerParams" value="--target es5" />
     <option name="hasOutDirectory" value="true" />
     <option name="outDirectory" value="$FileDir$/js" />
+    <option name="versionType" value="SERVICE_DIRECTORY" />
   </component>
 </project>
