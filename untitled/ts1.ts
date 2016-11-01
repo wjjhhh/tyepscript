@@ -1,32 +1,23 @@
-interface SquareConfig{
-    color?:string;
-    width?:number;
-}
-function createSquare(config:SquareConfig):{color:string;area:number}{
-    var newSquare={color:"white",area:100};
-    if(config.color){
-        newSquare.color=config.color;
+class Person{
+    name:string;
+    age:number;
+    constructor(name:string,age:number){
+        this.name=name;
+        this.age=age;
     }
-    if(config.width){
-        newSquare.area=config.width*config.width;
-    }
-    return newSquare;
-
-}
-var mySquare=createSquare({color:'red',width:200});
-
-interface SearchFunc {
-    (source: string, subString: string): boolean;
-}
-var mySearch:SearchFunc;
-mySearch=function(source:string,subString:string){
-    var result=source.search(subString);
-    if(result==-1){
-        return false;
-    }
-    else{
-        return true;
+    tell(){
+        return this.name+";"+this.age;
     }
 }
-
-
+class Student extends Person{
+    school:string;
+    constructor(name:string,age:number,school:string){
+        super(name,age)
+        this.school=school;
+    }
+    tell(){
+        return this.name+":"+this.age+":"+this.school;
+    }
+}
+var st=new Student("jj",12,"wefe");
+console.log(st.tell())
