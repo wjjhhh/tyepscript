@@ -20,19 +20,9 @@ var Person = (function () {
     };
     return Person;
 }());
-// class Student extends Person{
-//     school:string;
-//     constructor(name:string,age:number,school:string){
-//         super(name,age)
-//         this.school=school;
-//     }
-//     tell(){
-//         return this.name+":"+this.age+":"+this.school;
-//     }
-// }
-// var st=new Student("jj",12,"wefe");
-// console.log(st.tell())
-var st2 = new Person();
-st2.name = '123';
-console.log(st2.tell());
+function Hello(arg) {
+    return arg;
+}
+var myHello = Hello;
+alert(myHello(1));
 //# sourceMappingURL=ts1.js.map

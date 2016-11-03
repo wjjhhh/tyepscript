@@ -5,11 +5,49 @@
   <meta charset="utf-8" />
   <title>TypeScript</title>
   <script src="untitled/js/ts1.js"></script>
+  <style>
+    #pay_iframe{
+      width: 100%;
+      height: 100%;
+      border: none;
+      position: fixed;
+      display: none;
+      z-index: 99999998;
+      top:0;
+      left:0;
+    }
+
+  </style>
+  <link rel="stylesheet" href="../yuyue/output/sprite.css">
 </head>
 <body>
-<h1>TypeScript</h1>
+<div class="wrapper">
+  <h1>TypeScript</h1>
+</div>
 
+<iframe id="pay_iframe" src="http://www.jikexueyuan.com/course/typescript/"></iframe>
 <p><input id="btn1" type="button" value="动物呼吸" /></p>
 <p><input id="btn2" type="button" value="鱼吐泡" /></p>
 </body>
+<script>
+//  url='http://www.cnblogs.com/yy95/p/5678961.html'
+//  window.onload=function(){
+//    var ifr=document.getElementById('pay_iframe');
+//    setTimeout(function(){
+//
+//      ifr.src='';
+//    },100);
+//
+//    document.getElementById('btn1').onclick=function(){
+//      var t=document.getElementById('pay_iframe');
+//      t.style.display='block';
+//      t.src=url
+//    }
+//  }
+//
+//  window.onbeforeunload = function (e) {
+//    console.log(1222222222222);
+//    return e.returnValue = '确认离开页面？！';
+//  }
+</script>
 </html>
